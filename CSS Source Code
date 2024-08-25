@@ -1,0 +1,236 @@
+body {
+    font-family: "Marker Felt", fantasy;
+    color: #b82f7a;
+    background-image: url('gamebg.jpg'); /* Replace with your image file */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    margin: 0;
+}
+
+section {
+    text-align: center;
+}
+
+section {
+    transform: scale(1.0); /* This will zoom the entire game section by 150% */
+    transform-origin: center; /* Ensures that the zoom is centered */
+}
+
+.game--title {
+    font-size: 100px;
+    color: #b82f7a;
+    margin: 10px auto;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff; /* Adjust these values to suit your design */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('menubg.gif'); /* Replace with your image file */ 
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+}
+
+.menu--title {
+    font-size: 80px;
+    color: #b82f7a;
+    margin: 10px auto;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff; /* Adjust these values to suit your design */
+}
+
+.menu--button {
+    background-color: #eea7da;
+    color:  #b82f7a;
+    border: 2px solid #cf1e88;
+    padding: 15px 30px;
+    margin: 10px;
+    font-family: "Marker Felt", fantasy;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px 2px #cf1e88;
+    border: 2px solid #cf1e88;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu--button:hover {
+    background-color: #ea91c2; /* Changes color on hover */
+    transform: scale(1.1); /* Enlarges the button slightly */
+}
+
+.bg--music {
+    display: none;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjusting to fixed width */
+    grid-gap: 10px; /* Add spacing between cells */
+    justify-content: center; /* Center the grid in its container */
+    margin: 20px auto; /* Space above and below the grid */
+    background-color: #eea7da;
+    overflow: hidden; /* Prevents overflow issues */
+    width: 320px; /* Ensure the container width matches the total width of grid items */
+    padding: 20px; /* Remove any extra padding */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.icon1 {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 150px; /* Adjust the top position */
+    left: 300px; /* Adjust the left position */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    z-index: 1001; /* Ensure icons are on top of other content */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: bounce 2s ease infinite; /* Apply the animation */
+}
+
+.icon1 img {
+    width: 200px; /* Set image size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Space between icons */
+}
+
+.icon2 {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 150px; /* Adjust the top position */
+    right: 300px; /* Adjust the left position */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    z-index: 1000; /* Ensure icons are on top of .icon--container1 */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: bounce 2s ease infinite; /* Apply the animation */
+}
+
+.icon2 img {
+    width: 200px; /* Set image size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Space between icons */
+}
+
+.icon3 {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 200px; /* Adjust the top position */
+    left: 150px; /* Adjust the left position */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    z-index: 1000; /* Ensure icons are on top of .icon--container1 */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: bounce 2s ease infinite; /* Apply the animation */
+}
+
+.icon3 img {
+    width: 200px; /* Set image size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Space between icons */
+}
+
+.icon4 {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 250px; /* Adjust the top position */
+    right: 150px; /* Adjust the left position */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    z-index: 1000; /* Ensure icons are on top of .icon--container1 */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: bounce 2s ease infinite; /* Apply the animation */
+}
+
+.icon4 img {
+    width: 200px; /* Set image size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Space between icons */
+}
+
+.icon5 {
+    position: fixed; /* Fixes the position relative to the viewport */
+    top: 350px; /* Adjust the top position */
+    left: 300px; /* Adjust the left position */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack icons vertically */
+    align-items: center; /* Center icons horizontally */
+    z-index: 1000; /* Ensure icons are on top of .icon--container1 */
+    border-radius: 10px; /* Optional: rounded corners */
+    animation: bounce 2s ease infinite; /* Apply the animation */
+}
+
+.icon5 img {
+    width: 200px; /* Set image size */
+    height: auto; /* Keep aspect ratio */
+    margin-bottom: 10px; /* Space between icons */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #cf1e88;
+    border: 2px solid #cf1e88;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center; /* Center the content horizontally */
+    vertical-align: center; /* Center the content vertically */
+}
+
+.game--status {
+    font-size: 50px;
+    color: #b82f7a;
+    margin: 20px auto;
+    text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff; /* Adjust these values to suit your design */
+}
+
+.button--container {
+    display: flex;
+    justify-content: center; /* Aligns buttons horizontally in the center */
+    gap: 20px; /* Adds spacing between the buttons */
+    margin-top: 20px; /* Adds space above the container */
+}
+
+.back--button, .game--restart {
+    font-family: "Marker Felt", fantasy;
+    font-size: 20px;
+    background-color: #eea7da;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #b82f7a;
+    box-shadow: 2px 2px 2px 2px #cf1e88;
+    border: 2px solid #cf1e88;
+}
+
+.game--restart:hover, .back--button:hover {
+    background-color: #ea91c2; /* Changes color on hover */
+    transform: scale(1.1); /* Enlarges the button slightly */
+}
